@@ -10,6 +10,10 @@ body {
   background-color: rgb(97, 153, 97);
 }
 
+header {
+  box-sizing: border-box;
+}
+
 h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 90px;

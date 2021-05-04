@@ -14,9 +14,9 @@ function birthdayCountdown(){
   const tmin = Math.floor(tseconds/60)%60;
   const tsec = Math.floor(tseconds)%60;
   days.innerHTML = tdays;
-  hours.innerHTML = hours;
-  minutes.innerHTML = minutes;
-  seconds.innerHTML = seconds;
+  hours.innerHTML = thours;
+  minutes.innerHTML = tmin;
+  seconds.innerHTML = tsec;
 }
 birthdayCountdown();
 setInterval(birthdayCountdown, 1000);
