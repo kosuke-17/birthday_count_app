@@ -77,15 +77,26 @@ audio {
   border-radius: 50%;
 }
 
-.balloon {
-  position :fixed;
-  top: 0;
+.balloon,.balloon1 {
+  position: fixed;
+  top:-1vh;
   font-size: 20px;
-  transform:translateY(0);
+  transform: translateY(0);
   animation :balloon 4s linear forwards;
 }
-@keyframes .balloon{
+.balloon1{
+  right:0;
+}
+@keyframes balloon{
   to{
     transform:translateY(110vh);
   }
+}
+
+.heart {
+  position: fixed;
+  top: -1vh;
+  font-size: 30px;
+  transform: translateY(0);
+  animation: balloon 4s alternate-reverse;
 }

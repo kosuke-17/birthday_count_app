@@ -28,12 +28,23 @@ function celebration(){
   balloon.classList.add("balloon");
   balloon1.classList.add("balloon1");
   heart.classList.add("heart");
-  balloon.style.left = Math.random()*100+"vw";
+  balloon.style.left = Math.random()*100;
   balloon.style.animationDuration = Math.random()*2+3;
   balloon.innerText = "🎈";
   document.body.appendChild(balloon);
+  balloon1.style.left = Math.random()*100;
+  balloon1.style.animationDuration = Math.random()*2+3;
+  balloon1.innerText = "🎈";
+  document.body.appendChild(balloon1);
+  heart.style.left = Math.random()*100+"vw";
+  heart.style.animationDuration = Math.random()*2+3;
+  heart.innerText = "🎉";
+  document.body.appendChild(heart);
   setTimeout(()=>{
     balloon.remove();
+  }, 5000);
+  setTimeout(()=>{
+    balloon1.remove();
   }, 5000);
 }
 setInterval(celebration,300);
