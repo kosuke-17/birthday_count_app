@@ -20,3 +20,20 @@ function birthdayCountdown(){
 }
 birthdayCountdown();
 setInterval(birthdayCountdown, 1000);
+
+function celebration(){
+  const balloon = document.createElement("div");
+  const balloon1 = document.createElement("div");
+  const heart = document.createElement("div");
+  balloon.classList.add("balloon");
+  balloon1.classList.add("balloon1");
+  heart.classList.add("heart");
+  balloon.style.left = Math.random()*100+"vw";
+  balloon.style.animationDuration = Math.random()*2+3;
+  balloon.innerText = "🎈";
+  document.body.appendChild(balloon);
+  setTimeout(()=>{
+    balloon.remove();
+  }, 5000);
+}
+setInterval(celebration,300);

@@ -76,3 +76,16 @@ audio {
   border: 1px solid #000;
   border-radius: 50%;
 }
+
+.balloon {
+  position :fixed;
+  top: 0;
+  font-size: 20px;
+  transform:translateY(0);
+  animation :balloon 4s linear forwards;
+}
+@keyframes .balloon{
+  to{
+    transform:translateY(110vh);
+  }
+}
